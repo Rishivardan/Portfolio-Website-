@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:5174/#projects -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./my-portfolio_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5174/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-portfolio</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/User/my-portfolio/src/index.css">:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/User/my-portfolio/src/App.css">/*Navigation Bar*/
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #0f172a;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo{
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover{
+  color: #38bdf8;
+}
+
+
+/*Hero.css*/
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 60px;
+  background-color: #0f172a;
+  color: white;
+  min-height: 90vh;
+}
+
+.hero-content{
+  max-width: 50%;
+}
+.hero-content h1{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.hero-content h1 span{
+  color: #38bdf8;
+}
+
+.hero-content h2{
+  margin-top:10px;
+  font-weight: 500;
+  color: #cbd5e1;
+}
+
+.hero-content p{
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.btn, .btn-outline {
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn {
+  background-color: #38bdf8;
+  color: black;
+}
+
+.btn:hover {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  margin-left: 15px;
+}
+
+.btn-outline:hover {
+  background-color: #38bdf8;
+  color: white;
+}
+
+.hero-image img {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+/*About CSS */
+
+#about{
+  background-color: #1e293b;
+  color: white;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+#about h2{
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #38bdf8;
+
+}
+
+#about-content p{
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+.skills h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+
+.skills ul{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  gap:15px;
+  list-style: none;
+  padding: 0;
+}
+
+.skills li{
+  background-color: #0f172a;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border:1px solid #38bdf8;
+  transition: 0.3s;
+
+}
+
+.skills li:hover{
+  background-color: #38bdf8;
+  color: #0f172a;
+  cursor:context-menu;
+}
+
+
+/*Contact CSS */
+.contact-section{
+  text-align: center;
+  padding: 50px 20px;
+  background:  #f8f9fa;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.contact-form button {
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #ff6600;
+}
+
+</style></head>
+  <body>
+    <div id="root"><nav class="navbar"><h2 class="logo">Rishivardan Vallikanthan</h2><ul class="nav-links"><li><a href="http://localhost:5174/#home">Home</a></li><li><a href="http://localhost:5174/#about">About</a></li><li><a href="http://localhost:5174/#projects">Projects</a></li><li><a href="http://localhost:5174/#contact">Contact</a></li></ul></nav><section id="home" class="hero"><div class="hero-content"><h1>Hi, I'm <span>Rishivardan</span></h1><h2>Software Engineer | Web Developer</h2><p>I love building web apps that make life easier and smarter</p><div class="hero-buttons"><a href="http://localhost:5174/#projects" class="btn">View Projects</a><a href="http://localhost:5174/#contact" class="btn-outline">Hire Me</a></div></div><div class="hero-image"><img alt="Rishi-profile" src="./my-portfolio_files/Profile.jpg"></div></section><section id="about"><h2>About Me</h2><div class="about-content"><p>I'm <strong>Rishivardan</strong>, a passionate Software Engineering student graduating degree in University Of WestMinster and loves turning ideas into working code. I enjoy creaating interactive, user-friendly web applications using technologies like React,Node.js, and JAVA.</p><p>I'm constantly exploring new technologies and improving my skills to be full stack developer. My future goal is to become AI/ML Engineer. I believe in writing clean code,efficient and scalable makes an impact.</p><div class="skills"><h3>Skills</h3><ul><li>React.js</li><li>Node.js</li><li>JAVA</li><li>HTML, CSS, JavaScript</li><li>Python</li><li>Git &amp; Github</li></ul></div></div></section><section id="contact" class="contact-section"><h2>Contact Me</h2><p>Feel free to reach out for collaborations or just a friendly hello 👋</p><div class="contact-info"><p><strong>Email: </strong> rishivardan2004@gmail.com </p><p><strong>Phone: </strong> +94 77 878 2774 </p><p><strong>Location: </strong>Colombo, Sri Lanka</p></div><div class="social-links"><a href="http://localhost:5174/#" target="_blank">LinkedIn</a><a href="http://localhost:5174/#" target="_blank">GitHub</a><a href="http://localhost:5174/#" target="_blank">Twitter</a></div><form class="contact-form"><input placeholder="Enter Your Name" required="" type="text" value="" name="name"><textarea name="message" placeholder="Your message" rows="5" required=""></textarea><button type="submit">Send Message</button></form></section></div>
+    <script type="module" src="./my-portfolio_files/main.jsx"></script>
+  
+
+</body></html>
